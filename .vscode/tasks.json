@@ -1,0 +1,44 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "C:\\MinGW\\mingw64\\bin\\g++.exe",
+      "args": [
+        "-finput-charset=UTF-8",
+        "-fexec-charset=EUC-KR",
+        "${file}",
+        "-o",
+        "C:\\c++\\out.exe"
+      ],
+      "group": "build",
+      "problemMatcher": ["$gcc"],
+      "options": {
+        "shell": {
+          "executable": "cmd",
+          "args": ["/c"]
+        }
+      }
+    },
+    {
+      "label": "run",
+      "type": "shell",
+      "command": "start cmd /k \"chcp 949 > nul & C:\\c++\\out.exe & pause\"",
+      "dependsOn": "build",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "options": {
+        "shell": {
+          "executable": "cmd",
+          "args": ["/c"]
+        },
+        "env": {
+          "PATH": "C:\\MinGW\\mingw64\\bin;${env:PATH}"
+        }
+      }
+    }
+  ]
+}
