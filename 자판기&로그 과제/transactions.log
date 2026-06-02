@@ -1,0 +1,14 @@
+[ERROR]   2000042416554734:reserve.cpp[509] - 거스름돈 부족 잠금 change_amount=13070
+[WARNING] 2000042416554734:reserve.cpp[652] - 거스름돈 부족으로 전액 반환 inserted=16660
+[DEBUG]   2000042416555340:reserve.cpp[528] - 화폐 재고 확인
+[DEBUG]   2000042416591090:reserve.cpp[528] - 화폐 재고 확인
+[WARNING] 2000042416591888:reserve.cpp[412] - 잘못된 음료 번호 입력 index=17
+[DEBUG]   2000042416593446:reserve.cpp[318] - 음료 재고 확인
+[ERROR]   2000042416594207:reserve.cpp[509] - 거스름돈 부족 잠금 change_amount=1410
+[WARNING] 2000042416594207:reserve.cpp[652] - 거스름돈 부족으로 전액 반환 inserted=5000
+[DEBUG]   2000042417023863:reserve.cpp[528] - 화폐 재고 확인
+[DEBUG]   2000042417035563:reserve.cpp[318] - 음료 재고 확인
+[EVENT]   2000042417040414:reserve.cpp[432] - 구매 완료 index=2 name=커피 price=3590
+[EVENT]   2000042417041034:reserve.cpp[542] - 동전 보급 denom=500 count=22
+[DEBUG]   2000042417041242:reserve.cpp[363] - 일일 매출 확인 date=20000424 total=3590
+[EVENT]   2000042517041475:reserve.cpp[445] - 날짜 변경 date=20000425
